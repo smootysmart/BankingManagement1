@@ -11,23 +11,23 @@ public class Account {
         this.balance = balance;
     }
 
-    public static void deposit(double amount){
-
+    public void deposit(double amount){
+        this.balance += amount;
     }
 
-    public static void withDraw(double amount){
-
+    public  void withDraw(double amount){
+        this.balance = this.balance - amount;
     }
 
-    public static double getBalance(){
-        return 0;
+    public double getBalance(){
+        return this.balance;
     }
 
-    public static int getAccountNumber(){
-        return 0;
+    public int getAccountNumber(){
+        return this.accountNumber;
     }
 
-    public static String getAccountName(String accountName){
-        return accountName;
+    public String getAccountName(String accountName){
+        return this.accountName;
     }
 }

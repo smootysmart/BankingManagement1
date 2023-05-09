@@ -10,19 +10,19 @@ public class Bank {
         this.name = name;
     }
     
-    public static void openAccount(Account account){
+    public void openAccount(Account account){
 
     }
 
-    public static void closeAccount(int accountNumber){
+    public void closeAccount(int accountNumber){
 
     }
 
-    public static void saveAccount(Account account){
+    public void saveAccount(Account account){
 
     }
 
-    public static void listAccount(){
+    public void listAccount(){
 
     }
 
