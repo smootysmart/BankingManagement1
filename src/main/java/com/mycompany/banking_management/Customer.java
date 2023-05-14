@@ -1,26 +1,20 @@
 package com.mycompany.banking_management;
 
 public class Customer {
-    private String firstName;
-    private String lastName;
-    private int idCard;
-    private String phoneNumber;
+    int idCard;
+    String fistName;
+    String lastName;
+    String phoneNumber;
 
-    public static int getIdCard(){
-        
+    public int getIdCard() {
+        return idCard;
     }
 
-    public static String getFirstName(){
-
+    public String getFistName() {
+        return fistName;
     }
 
-    public static String getLastName(){
-
+    public String getLastName() {
+        return lastName;
     }
-
-    public static String getPhoneNumber(){
-
-    }
-
-
 }

@@ -1,33 +1,34 @@
 package com.mycompany.banking_management;
 
 public class Account {
-    private int accountNumber;
-    private String accountName;
+    private int number;
+    private String name;
     private double balance;
 
-    public Account(int accountNumber,String accountName,double balance){
-        this.accountNumber = accountNumber;
-        this.accountName = accountName;
+    public Account(int number, String name, double balance) {
+        this.number = number;
+        this.name = name;
         this.balance = balance;
     }
 
     public void deposit(double amount){
         this.balance += amount;
+
+    }
+    public void withdraw(double amount){
+        this.balance -= amount;
+
     }
 
-    public  void withDraw(double amount){
-        this.balance = this.balance - amount;
+    public double getBalance() {
+        return balance;
     }
 
-    public double getBalance(){
-        return this.balance;
+    public int getAccountNumber() {
+        return number;
     }
 
-    public int getAccountNumber(){
-        return this.accountNumber;
-    }
-
-    public String getAccountName(String accountName){
-        return this.accountName;
+    public String getAccountName() {
+        return name;
     }
 }
